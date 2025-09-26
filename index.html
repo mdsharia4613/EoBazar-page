@@ -16,8 +16,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <style>
+        .image1 {
+            background-image: url(./images/Image\(12\).png);
+            width: 600px;
+            height: 300px;
+            background-size: cover;
+        }
 
-    <title>Document</title>
+        #image2 {
+            background-image: url(./images/card-img02.png);
+            width: 600px;
+            height: 300px;
+            background-size: cover;
+        }
+    </style>
+
+    <title>Ecobazar</title>
 </head>
 
 <body>
@@ -275,38 +290,89 @@
                 </div>
                 <div class="max-w-lg space-y-4">
                     <h1 class="font-semibold text-4xl">100% Trusted <br>Orgain Food Store</h1>
-                    <h3 class="font-medium "><i class="fa-solid fa-check bg-green-500 rounded-full text-white"></i> Healthy & natural food for lovers of healthy food.</h3> 
-                    <p class="text-gray-400">Ut quis tempus erat. Phasellus euismod bibendum magna non tristique. Pellentesque semper vestibulum elit sed condimentum. Nunc pretium fermentum interdum. </p>
+                    <h3 class="font-medium "><i class="fa-solid fa-check bg-green-500 rounded-full text-white"></i>
+                        Healthy & natural food for lovers of healthy food.</h3>
+                    <p class="text-gray-400">Ut quis tempus erat. Phasellus euismod bibendum magna non tristique.
+                        Pellentesque semper vestibulum elit sed condimentum. Nunc pretium fermentum interdum. </p>
 
-                    <h4 class="font-medium"><i class="fa-solid fa-check bg-green-500 rounded-full text-white"></i> Every day fresh and quality products for you.</h4>
-                    <p class="text-gray-400">Maecenas vehicula a justo quis laoreet. Sed in placerat nibh, a posuere ex. Morbi sem neque, aliquam sed orci et, rhoncus lobortis felis. Sed vestibulum nisl sit amet sapien.</p>
-                    <button class="bg-green-400 py-1 px-2 rounded-lg">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                    <h4 class="font-medium"><i class="fa-solid fa-check bg-green-500 rounded-full text-white"></i> Every
+                        day fresh and quality products for you.</h4>
+                    <p class="text-gray-400">Maecenas vehicula a justo quis laoreet. Sed in placerat nibh, a posuere ex.
+                        Morbi sem neque, aliquam sed orci et, rhoncus lobortis felis. Sed vestibulum nisl sit amet
+                        sapien.</p>
+                    <button class="bg-green-400 py-1 px-2 rounded-lg">Shop Now <i
+                            class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
 
         </section>
 
         <!-- section-5 -->
-         <section class="bg-green-900 py-10 gap-5 ">
-                <div class="flex md:flex-col lg:flex-row justify-center gap-3 flex-wrap">
-                    <div class="bg-[#FFFFFF]  w-[200px] h-40 py-8 px-8">
-                        <h1 class="text-5xl font-light">37+</h1>
-                        <p class=" font-normal">Years if Hard Work</p>
-                    </div>
-                    <div class="bg-[#FFFFFF]  w-[200px] h-40 py-8 px-8">
-                        <h1 class="text-5xl font-light">37+</h1>
-                        <p class=" font-normal">Years if Hard Work</p>
-                    </div>
-                    <div class="bg-[#FFFFFF]  w-[200px] h-40 py-8 px-8">
-                        <h1 class="text-5xl font-light">37+</h1>
-                        <p class=" font-normal">Years if Hard Work</p>
-                    </div>
-                    <div class="bg-[#FFFFFF]  w-[200px] h-40 py-8 px-8">
-                        <h1 class="text-5xl font-light">37+</h1>
-                        <p class=" font-normal">Years if Hard Work</p>
+        <section class="bg-green-900 py-10 gap-5 mb-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-8/12 m-auto place-items-center gap-3">
+                <div class="bg-[#FFFFFF]  w-[200px] h-40 py-8 px-8">
+                    <h1 class="text-5xl font-light text-green-700">37+</h1>
+                    <p class=" font-normal">Years if Hard Work</p>
+                </div>
+                <div class="bg-[#FFFFFF]  w-[200px] h-40 py-8 px-8">
+                    <h1 class="text-5xl font-light text-green-700">500+</h1>
+                    <p class=" font-normal">Happy Customer</p>
+                </div>
+                <div class="bg-[#FFFFFF]  w-[200px] h-40 py-8 px-8">
+                    <h1 class="text-5xl font-light text-green-700">28</h1>
+                    <p class=" font-normal">Qualified Team Member</p>
+                </div>
+                <div class="bg-[#FFFFFF]  w-[200px] h-40 py-8 px-8">
+                    <h1 class="text-5xl font-light text-green-700">750+</h1>
+                    <p class=" font-normal">Monthly Orders</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- section-6 -->
+        <section class="mb-10">
+            <div class="flex flex-col lg:flex-row justify-center gap-3">
+                <div class="relative image1">
+                    <!-- card-1 -->
+                    <div class="absolute top-20 space-y-4 px-8">
+                        <p class=" font-medium text-[#FFFFFF]">100% ORGANIC</p>
+                        <h1 class="font-semibold text-4xl text-white">Fruit & Vegetable</h1>
+                        <p class="font-normal text-[#FFFFFF] text-sm">Starting at: <span
+                                class="bg-orange-400 p-1 text-xs rounded-lg">$12.00</span></p>
+                        <button class="bg-green-600 py-2 px-2 rounded-full">Shop Now <i
+                                class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
-         </section>
+                <div id="image2" class="relative">
+                    <!-- card-2 -->
+                    <div class="absolute top-20 space-y-4 px-8 text-white">
+                        <p class=" font-medium text-[#FFFFFF]">SALE OFF THE WEEK</p>
+                        <h1 class="font-semibold text-4xl text-white">Sales of the year</h1>
+                        <div class="flex gap-4 text-center mb-6">
+                            <div>
+                                <p class="text-2xl font-bold">00</p>
+                                <span class="text-xs">DAYS</span>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold">02</p>
+                                <span class="text-xs">HOURS</span>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold">18</p>
+                                <span class="text-xs">MINS</span>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold">46</p>
+                                <span class="text-xs">SECS</span>
+                            </div>
+                        </div>
+                        <button class="bg-green-600 py-2 px-2 rounded-full">Shop Now <i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 </body>
 
