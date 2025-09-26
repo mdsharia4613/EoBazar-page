@@ -1,26 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navbar</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-white">
-  <!-- Navbar -->
-<div class="ml-4">
-  <select onchange="location = this.value" class="border border-gray-300 rounded-md px-2 py-1">
-    <option value="#">Home</option>
-    <option value="/shop">Shop</option>
-    <option value="/pages">Pages</option>
-    <option value="/blog">Blog</option>
-    <option value="/about">About Us</option>
-  </select>
-</div>
+  <section class="w-11/12 mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+    <!-- Left Side (Images) -->
+    <div class="flex gap-4 justify-center">
+      <img class="w-48 h-64 object-cover rounded-lg shadow-md" src="./images/farmer1.png" alt="Farmer with apples">
+      <img class="w-48 h-64 object-cover rounded-lg shadow-md" src="./images/farmer2.png" alt="Farmer with basket">
+    </div>
+
+    <!-- Right Side (Text Content) -->
+    <div>
+      <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+        100% Trusted <br> Organic Food Store
+      </h1>
+
+      <!-- Point 1 -->
+      <div class="flex items-start gap-3 mb-5">
+        <span class="text-green-600 text-xl">
+          <i class="fa-solid fa-circle-check"></i>
+        </span>
+        <div>
+          <p class="font-semibold text-lg text-gray-800">
+            Healthy & natural food for lovers of healthy food.
+          </p>
+          <p class="text-gray-500 text-sm">
+            Ut quis tempus erat. Phasellus euismod bibendum magna non tristique. Pellentesque semper vestibulum.
+          </p>
+        </div>
+      </div>
+
+      <!-- Point 2 -->
+      <div class="flex items-start gap-3 mb-5">
+        <span class="text-green-600 text-xl">
+          <i class="fa-solid fa-circle-check"></i>
+        </span>
+        <div>
+          <p class="font-semibold text-lg text-gray-800">
+            Every day fresh and quality products for you.
+          </p>
+          <p class="text-gray-500 text-sm">
+            Maecenas vehicula a justo quis laoreet. Sed in placerat nibh, a posuere ex. Morbi sem neque, aliquam.
+          </p>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <button
+        class="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 rounded-full flex items-center gap-2">
+        Shop Now <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </section>
+
 
 
 
   <!-- Font Awesome for icons -->
   <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
