@@ -4,67 +4,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar</title>
+  <title>Testimonial Carousel</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white">
-  <section class="w-11/12 mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-    <!-- Left Side (Images) -->
-    <div class="flex gap-4 justify-center">
-      <img class="w-48 h-64 object-cover rounded-lg shadow-md" src="./images/farmer1.png" alt="Farmer with apples">
-      <img class="w-48 h-64 object-cover rounded-lg shadow-md" src="./images/farmer2.png" alt="Farmer with basket">
-    </div>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
-    <!-- Right Side (Text Content) -->
-    <div>
-      <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-        100% Trusted <br> Organic Food Store
-      </h1>
-
-      <!-- Point 1 -->
-      <div class="flex items-start gap-3 mb-5">
-        <span class="text-green-600 text-xl">
-          <i class="fa-solid fa-circle-check"></i>
-        </span>
-        <div>
-          <p class="font-semibold text-lg text-gray-800">
-            Healthy & natural food for lovers of healthy food.
-          </p>
-          <p class="text-gray-500 text-sm">
-            Ut quis tempus erat. Phasellus euismod bibendum magna non tristique. Pellentesque semper vestibulum.
-          </p>
+  <div class="relative w-[900px] overflow-hidden">
+    <!-- Cards Wrapper -->
+    <div id="cardWrapper" class="flex transition-transform duration-500">
+      
+      <!-- Card 1 -->
+      <div class="w-[300px] p-4">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <p class="text-gray-600">"This service is amazing! Highly recommend to everyone."</p>
+          <h3 class="mt-4 font-semibold text-gray-800">- John Doe</h3>
+        </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="w-[300px] p-4">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <p class="text-gray-600">"Really great experience, I’m super happy with the result."</p>
+          <h3 class="mt-4 font-semibold text-gray-800">- Sarah Smith</h3>
+        </div>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="w-[300px] p-4">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <p class="text-gray-600">"Fantastic support team, solved my issues very quickly."</p>
+          <h3 class="mt-4 font-semibold text-gray-800">- Ali Khan</h3>
+        </div>
+      </div>
+      
+      <!-- Card 4 -->
+      <div class="w-[300px] p-4">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <p class="text-gray-600">"Very easy to use and reliable system. I love it!"</p>
+          <h3 class="mt-4 font-semibold text-gray-800">- Maria Lopez</h3>
+        </div>
+      </div>
+      
+      <!-- Card 5 -->
+      <div class="w-[300px] p-4">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <p class="text-gray-600">"Affordable and high-quality service. Great job!"</p>
+          <h3 class="mt-4 font-semibold text-gray-800">- David Miller</h3>
         </div>
       </div>
 
-      <!-- Point 2 -->
-      <div class="flex items-start gap-3 mb-5">
-        <span class="text-green-600 text-xl">
-          <i class="fa-solid fa-circle-check"></i>
-        </span>
-        <div>
-          <p class="font-semibold text-lg text-gray-800">
-            Every day fresh and quality products for you.
-          </p>
-          <p class="text-gray-500 text-sm">
-            Maecenas vehicula a justo quis laoreet. Sed in placerat nibh, a posuere ex. Morbi sem neque, aliquam.
-          </p>
-        </div>
-      </div>
-
-      <!-- Button -->
-      <button
-        class="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 rounded-full flex items-center gap-2">
-        Shop Now <i class="fa-solid fa-arrow-right"></i>
-      </button>
     </div>
-  </section>
 
+    <!-- Next Button -->
+    <button onclick="nextSlide()" class="absolute top-1/2 right-0 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full">
+      ❯
+    </button>
+  </div>
 
+  <script>
+    let currentSlide = 0;
+    const cardWrapper = document.getElementById("cardWrapper");
+    const cardWidth = 300 + 32; // card width + padding (w-[300px] + p-4)
 
+    function nextSlide() {
+      if (currentSlide < cardWrapper.children.length - 3) {
+        currentSlide++;
+        cardWrapper.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
+      }
+    }
+  </script>
 
-  <!-- Font Awesome for icons -->
-  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
